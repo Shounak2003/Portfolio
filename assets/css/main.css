@@ -2048,6 +2048,18 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+
+		.sm {
+			margin-top: 10px;
+		  
+			padding-right: 20px;
+			height: 20px;
+			transition: 0.2s linear;
+		  }
+		  
+		  .sm :hover {
+			color: #48dbfb;
+		  }
 /*Skills */
 	#Skills {
 		padding: 2rem;

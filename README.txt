@@ -1,4 +1,4 @@
-Porfoliio site accessible at: https://shounak2003.github.io/Portfolio/
+Porfoliio site accessible at: https://inzamam93.github.io/portfolio/
 
 
 Credits:
