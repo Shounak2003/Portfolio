@@ -20,14 +20,14 @@ const Contact = () => {
               Let's <span className='text-accent'> connect. </span>
             </motion.h2>
             {/**form */}
-            <motion.form variants={fadeIn('up',0.4)} initial="hidden" animate="show" exit="hidden" className='flex-1 flex flex-col gap-6 w-full  mx-auto'>
+            <motion.form variants={fadeIn('up',0.4)} initial="hidden" animate="show" exit="hidden" method="POST" action="https://getform.io/f/f45bd1f0-ff32-4c30-8f86-837dc3db7c0c"  className='flex-1 flex flex-col gap-6 w-full  mx-auto'>
               {/**imput group */}
               <div className='flex gap-x-6 w-full '>
-                <input type="text" placeholder='name' className='input'/>
-                <input type="text" placeholder='email' className='input'/>
+              <input type="text" name="name" placeholder='name' className='input'/>
+               <input type="text" name="email" placeholder='email' className='input'/>
               </div>
-              <input type="text" placeholder='subject' className='input'/>
-              <textarea placeholder='message' className='textarea'></textarea>
+              <input type="text" name="subject" placeholder='subject' className='input'/>
+<textarea name="message" placeholder='message' className='textarea'></textarea>
               <button className='btn rounded-full border border-white/50 max-w-[-170px] px-8 transition-all  duration-300 flex items-center justify-center  overflow-hidden hover:border-accent group '>
                 <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
                   Let's talk
