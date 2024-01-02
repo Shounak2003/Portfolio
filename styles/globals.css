@@ -48,4 +48,13 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
+
+  .curved-text-top {
+    transform: rotate(-60deg);
+  }
+  
+  .curved-text-bottom {
+    transform: rotate(15deg);
+  }
+  
 }
