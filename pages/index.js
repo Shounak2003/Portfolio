@@ -23,7 +23,8 @@ const Home = () => {
 <motion.h1 
   variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden" 
   className='h1'>
-  <span className='text-white'>A Code Composer :</span><br /> Building The Next{' '}
+  <span className='text-white'>A Code Composer :</span><br /> Building Tomorrows
+
   <span className='text-accent'>
     <br />
     Digital Frontiers
