@@ -22,7 +22,7 @@ const Testimonials = () => {
           </div>
 
           {/* Wrap your TestimonialSlider with Element and apply styles for scrolling */}
-          <Element name="testimonialSlider" style={{ overflowY: 'auto', maxHeight: '500px' }}>
+          <Element name="testimonialSlider" style={{ overflowY: 'auto', maxHeight: '800px' }}>
             <TestimonialSlider />
           </Element>
         </motion.div>
