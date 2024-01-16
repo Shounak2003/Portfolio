@@ -14,7 +14,7 @@ const testimonialData = [
     position: 'IoT Developer || AI/ML Developer @ Stick & Dot || Software Developer || Networking & DevOps Enthusiast || AWS Geek || Ex Data Analyst @ ONEMi.in (kissht.com)',
     linkedin:'https://www.linkedin.com/in/shaurya-srinet/?originalSubdomain=in',
     message:
-      `I am pleased to wholeheartedly recommend Shounak Chandra, a colleague who stands out as one of the best individuals I've collaborated with. Shounak's exceptional productivity, hardworking nature, and forward-thinking approach make him a remarkable asset to any team. His dedication to meeting deadlines and ensuring smooth operations reflects a level of focus that guarantees success.`,
+      `I am pleased to wholeheartedly recommend Shounak Chandra, a colleague who stands out as one of the best individuals I've collaborated with. Shounak's exceptional productivity, hardworking nature, and forward-thinking approach make him a remarkable asset to any team. His dedication to meeting deadlines and ensuring smooth operations reflects a level of focus that guarantees success.` ,
   },
   {
     image: '/Sambath.jpeg',
@@ -76,7 +76,7 @@ const TestimonialSlider = () => {
                 <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0' />
               </div>
               {/* message */}
-              <div className='xl:text-[12px]  text-center md:text-left'>{`${person.message}\n\n-`}</div>
+              <div className='xl:text-[12px]  text-center md:text-left'>{person.message}</div>
 
             </div>
           </div>
