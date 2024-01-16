@@ -9,7 +9,7 @@ const Testimonials = () => {
     <div className='h-full bg-primary/30 py-32 text-center'>
       <div className='container mx-auto h-full flex flex-col justify-center'>
         {/* Title */}
-        <motion.h2 variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden" className='h2 mb-8 xl:mb-0 '>
+        <motion.h2 variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden" className='h2 mb-8 xl:mb-0 sm:mb-4 '>
           What People <span className='text-accent'>say.</span>
         </motion.h2>
 
