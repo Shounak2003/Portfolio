@@ -41,12 +41,8 @@ const Home = () => {
           <motion.p 
             variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" 
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-7 xl:mb-16 ">
-            Passionate and versatile software developer based in India, with expertise spanning diverse tech stacks. 
-            Proficient in game development, web development, Web 3.0 technologies, and the immersive realms of AR/VR. 
-            Adept at navigating the blockchain landscape. Dedicated to crafting innovative and impactful digital solutions, 
-            combining technical acumen with a creative approach. Committed to pushing boundaries and contributing to the evolution of 
-            technology. Eager to bring a dynamic skill set to collaborative projects and make meaningful contributions to the ever-evolving world of 
-            software development
+
+Passionate and versatile software developer based in India, with expertise in game development, web development, Web 3.0, and AR/VR. Proficient in navigating the blockchain landscape, dedicated to crafting innovative digital solutions. Committed to pushing boundaries and contributing to technology&apos;s evolution, eager to bring a dynamic skill set to collaborative projects. Actively seeking remote job opportunities and open to contributing to open-source initiatives.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative"> 
