@@ -69,11 +69,12 @@ const Aboutme = () => {
   
                 {/* Social icons on mobile */}
                 <div className='flex justify-center items-center mt-2 md:hidden'>
-                  <a href="https://twitter.com/_shounakchandra" target="_blank" rel="noopener noreferrer" className='mr-4'><FaTwitter /></a>
-                  <a href="https://www.instagram.com/_shounakchandra/" target="_blank" rel="noopener noreferrer" className='mr-4'><FaInstagram /></a>
-                  <a href="https://www.linkedin.com/in/shounakchandra/" target="_blank" rel="noopener noreferrer" className='mr-4'><FaLinkedin /></a>
-                  <a href="https://github.com/Shounak2003" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                </div>
+  <a href="https://twitter.com/_shounakchandra" target="_blank" rel="noopener noreferrer" className='mr-4'><FaTwitter size={32} /></a>
+  <a href="https://www.instagram.com/_shounakchandra/" target="_blank" rel="noopener noreferrer" className='mr-4'><FaInstagram size={32} /></a>
+  <a href="https://www.linkedin.com/in/shounakchandra/" target="_blank" rel="noopener noreferrer" className='mr-4'><FaLinkedin size={32} /></a>
+  <a href="https://github.com/Shounak2003" target="_blank" rel="noopener noreferrer"><FaGithub size={32} /></a>
+</div>
+
               </div>
             </div>
           </SwiperSlide>
