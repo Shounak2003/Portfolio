@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation,Pagination } from 'swiper';
+import { Navigation } from 'swiper';
 import { FaQuoteLeft } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -23,7 +22,7 @@ const testimonialData = [
     position: 'Visual Ergonomics, Assistant Professor, Department of Architecture, TKM College of Engineering, Kollam, Kerala.',
     linkedin:'https://www.linkedin.com/in/sambathrd/',
     message:
-      'Shounak Chandra is a very sincere and hardworking young programmer and UX-UI Designer. He has excellent coding proficiency and problem solving skills. He is a very productive person and is a multi-skilled person with a high level of patience. He associated with me in one of my Virtual reality-based research projects. Shounak made a custom-made program using Vizard (world viz), a python based virtual stimulation for psychophysiological analysis. His desire for proficiency and education makes him a valuable asset to the team. ',
+      'Shounak Chandra is a very sincere and hardworking young programmer and UX-UI Designer. He has excellent coding proficiency and problem-solving skills. He is a very productive person and is a multi-skilled person with a high level of patience. He associated with me in one of my Virtual reality-based research projects. Shounak made a custom-made program using Vizard (world viz), a python based virtual stimulation for psychophysiological analysis. His desire for proficiency and education makes him a valuable asset to the team. ',
   },
   {
     image: '/Shynu.jpeg',
@@ -36,16 +35,16 @@ const testimonialData = [
      Shounak has contributed to generating crucial behavioral data for our empirical analysis. Grasping complex concepts, designing rigorous experiments, and meticulous data analysis have been rewarding aspects of this journey.`,
   },
 ];
+
 const TestimonialSlider = () => {
   return (
     <Swiper
       loop={false}
       spaceBetween={10}
-      modules={[Navigation, Pagination]}
+      modules={[Navigation]}
       className='h-[400px]'
       slidesPerView={1}
       navigation={true}
-      pagination={{ clickable: true }}
       autoHeight={true}
     >
       {testimonialData.map((person, index) => (
