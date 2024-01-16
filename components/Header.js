@@ -6,7 +6,7 @@ import { useRouter } from "next/router"; // Import useRouter from next/router
 // components
 import Socials from "../components/Socials";
 import React from "react";
-// ... (existing imports)
+
 
 const Header = () => {
   const router = useRouter(); // Use useRouter hook
@@ -49,4 +49,3 @@ const Header = () => {
 };
 
 export default Header;
-
