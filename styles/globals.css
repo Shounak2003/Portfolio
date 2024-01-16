@@ -56,5 +56,9 @@
   .curved-text-bottom {
     transform: rotate(15deg);
   }
+ 
+  .circular-image {
+    border-radius: 50%;
+  }
   
 }
