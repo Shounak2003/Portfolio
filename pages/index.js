@@ -27,7 +27,7 @@ const Home = () => {
           {/* title */}
           <motion.h1 
             variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden" 
-            className='h1'>
+            className='h1 hidden xl:block'>
             <span className='text-white'>A Code Composer :</span><br /> Building Tomorrow&rsquo;s{' '}
             <span className='text-accent'>
               <br />
@@ -38,17 +38,18 @@ const Home = () => {
           {/* subtitle */}
           <motion.p 
             variants={fadeIn('down', 0.3)} initial="hidden" animate="show" exit="hidden" 
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-7 xl:mb-16 ">
             Passionate and versatile software developer based in India, with expertise spanning diverse tech stacks. 
             Proficient in game development, web development, Web 3.0 technologies, and the immersive realms of AR/VR. 
             Adept at navigating the blockchain landscape. Dedicated to crafting innovative and impactful digital solutions, 
             combining technical acumen with a creative approach. Committed to pushing boundaries and contributing to the evolution of 
             technology. Eager to bring a dynamic skill set to collaborative projects and make meaningful contributions to the ever-evolving world of 
-            software development.
+            software development
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative"> 
-            <ProjectsBtn />
+            {/* Hide the project button on mobile devices */}
+            <ProjectsBtn className="hidden md:block" />
           </div>
           <motion.div 
             variants={fadeIn('down', 0.4)} initial="hidden" animate="show" exit="hidden" 

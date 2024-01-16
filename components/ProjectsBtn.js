@@ -17,14 +17,13 @@ const ProjectsBtn = () => {
   };
 
   return (
-    <div className="mx-auto xl:mx-0 text-white">
+    <div className="mx-auto xl:mx-0 text-white hidden md:block">
       <div
         className="relative w-[185px] h-[185px] flex flex-col justify-center items-center bg-circleStar bg-cover bg-no-repeat group"
         onClick={openCVInNewTab}
         role="button"
       >
         {/* Rounded Text Above the Arrow */}
-        
         
         {/* <Image
           src={'/rounded-text.png'}

@@ -1,22 +1,34 @@
-//next image
+// next/image
 import Image from "next/image";
-//next Link
+// next/link
 import Link from "next/link";
-//components
-import Socials from '../components/Socials';
-import React from 'react';
+import { useRouter } from "next/router"; // Import useRouter from next/router
+// components
+import Socials from "../components/Socials";
+import React from "react";
 // ... (existing imports)
 
 const Header = () => {
+  const router = useRouter(); // Use useRouter hook
+
+  // Check if the current page is "Work" or "Services"
+  const isMobileHide = router.pathname === "/work" || router.pathname === "/services" || router.pathname === "/testimonials" || router.pathname === "/contact" || router.pathname === "/about";
+
+  // Return null if we are on the specified pages and on a mobile device
+  if (isMobileHide && typeof window !== "undefined" && window.innerWidth <= 768) {
+    return null;
+  }
+
   return (
-    <header className='absolute z-30 w-full flex flex-col items-center px-4 xl:px-0 xl:h-[90px]'>
+    <header className="absolute z-30 w-full flex flex-col items-center px-4 xl:px-0 xl:h-[90px]">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6">
           <div className="mt-7">
             {/** Heading */}
-            <Link href={'/'}>
+            <Link href={"/"}>
               <h1 className="cursor-pointer text-5xl font-bold text-white hover:text-accent">
-                Shounak<span className="text-white text-5xl font-semibold hover:text-accent"> Chandra</span> <span className="text-accent hover:text-accent">.</span>
+                Shounak<span className="text-white text-5xl font-semibold hover:text-accent"> Chandra</span>{" "}
+                <span className="text-accent hover:text-accent">.</span>
               </h1>
             </Link>
 
@@ -37,3 +49,4 @@ const Header = () => {
 };
 
 export default Header;
+
