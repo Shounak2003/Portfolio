@@ -114,7 +114,8 @@ const ServiceSlider = () => {
         <SwiperSlide key={index}>
           <div
             onClick={() => handleServiceClick(item.githubLink)}
-            className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex flex-col gap-4 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'
+            className='bg-[rgba(65,47,123,0.15)] h-full rounded-lg px-6 py-8 flex flex-col gap-4 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'
+            style={{ height: '100%' }} // Set a fixed height for the container
           >
             <div className='text-4xl text-accent mb-4'>
               {typeof item.icon === 'string' ? (
