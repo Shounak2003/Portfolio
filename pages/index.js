@@ -44,7 +44,7 @@ const Home = () => {
             Adept at navigating the blockchain landscape. Dedicated to crafting innovative and impactful digital solutions, 
             combining technical acumen with a creative approach. Committed to pushing boundaries and contributing to the evolution of 
             technology. Eager to bring a dynamic skill set to collaborative projects and make meaningful contributions to the ever-evolving world of 
-            software development
+            software development.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative"> 
