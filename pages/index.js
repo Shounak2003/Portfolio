@@ -1,6 +1,7 @@
 //next image
 import Image from "next/image";
 import Head from 'next/head'; // Import Head from next/head
+//import RoundedFavicon from "../../public/title-me.png";
 
 //components
 import ParticlesContainer from "../components/ParticlesContainer";
@@ -19,6 +20,7 @@ const Home = () => {
       {/* Add Head component for custom title */}
       <Head>
         <title>Shounak&rsquo;s{' '} Portfolio</title>
+        <link rel="icon" href="/logome.png" />
       </Head>
 
       {/* text */}

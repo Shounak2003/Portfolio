@@ -1,5 +1,6 @@
 //components
 import Circles from '/components/Circles'; 
+import { useEffect } from 'react';
 
 //icons
 import {BsArrowRight} from 'react-icons/bs';
@@ -10,6 +11,18 @@ import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
 
 const Contact = () => {
+  useEffect(() => {
+    // Load the Typeform embed script
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Cleanup the script when the component is unmounted
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
   return (
     <div className='h-full bg-primary/30 '>
       <div className='container-mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
@@ -35,8 +48,16 @@ const Contact = () => {
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/>
             </button>
           </motion.form>
+            {/* Typeform button */}
+            <div data-tf-live="01HM9Z9YQ9VZFQSEGKDG7JBQ49"></div>
+          {/*Copyright*/}
+          <div className="text-center pt-4">
+        <p className="text-sm font-bold">&copy; 2024 Shounak Chandra. All Rights Reserved.</p>
+      </div>
         </div>
       </div>
+
+      
     </div>
   );
 };
