@@ -24,7 +24,7 @@ const Work= () => {
             </span>
           </motion.h2>
           <motion.p variants={fadeIn('up',0.4)} initial="hidden" animate="show" exit="hidden" className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor
+          Passionate software developer with expertise in blockchain, metaverse, MERN Stack, and web development. Formerly specialized in Unity game development and AR/VR projects for diverse clients. Check out some of my featured works.
 
           </motion.p>
         </div>
