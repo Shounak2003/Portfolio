@@ -9,6 +9,7 @@ import {BsArrowRight} from 'react-icons/bs';
 import {motion} from 'framer-motion';
 //variants
 import {fadeIn} from '../../variants';
+import Head from 'next/head'; // Import Head from next/head
 
 const Contact = () => {
   useEffect(() => {
@@ -25,6 +26,10 @@ const Contact = () => {
   }, []);
   return (
     <div className='h-full bg-primary/30 '>
+      <Head>
+    <title>Shounak</title>
+    <link rel="icon" href="/logome.png" />
+  </Head>
       <div className='container-mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         {/**text & form  */}
         <div className='flex flex-col w-full max-w-[700px]'>

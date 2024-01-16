@@ -4,6 +4,7 @@
 import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb';
 import Circles from "../../components/Circles";
+import Head from 'next/head'; // Import Head from next/head
 
 //framermotion
 import {motion} from 'framer-motion';
@@ -12,6 +13,10 @@ import {fadeIn} from '../../variants';
 
 const Work= () => {
   return (<div className="h-full bg-primary/30 py-36 flex items-center">
+    <Head>
+    <title>Shounak</title>
+    <link rel="icon" href="/logome.png" />
+  </Head>
     <Circles />
     <div className="container mx-auto">
       <div className="flex flex-col xl:flex-row gap-x-8">

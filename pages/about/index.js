@@ -3,10 +3,20 @@ import TestimonialSlider from '../../components/Aboutme';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
+import Head from 'next/head'; // Import Head from next/head
 
 const About = () => {
   return (
+
+
+
     <div className='h-full bg-primary/30 py-32 text-center'>
+
+<Head>
+    <title>Shounak</title>
+    <link rel="icon" href="/logome.png" />
+  </Head>
+
       <div className='container mx-auto h-full flex flex-col justify-center'>
         {/* Title */}
         <motion.h2 variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden" className='h2 mb-8 xl:mb-0 sm:mb-4 text-accent '>
