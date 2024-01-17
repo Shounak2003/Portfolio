@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <div className='h-full bg-primary/30 '>
       <Head>
-    <title>Shounak</title>
+    <title>COntact me</title>
     <link rel="icon" href="/logome.png" />
   </Head>
       <div className='container-mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>

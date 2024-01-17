@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <div className='h-full bg-primary/30 py-32 text-center'>
           <Head>
-    <title>Shounak</title>
+    <title>My Testimonials</title>
     <link rel="icon" href="/logome.png" />
   </Head>
       <div className='container mx-auto h-full flex flex-col justify-center'>

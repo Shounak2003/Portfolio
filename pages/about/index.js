@@ -13,7 +13,7 @@ const About = () => {
     <div className='h-full bg-primary/30 py-32 text-center'>
 
 <Head>
-    <title>Shounak</title>
+    <title>About me</title>
     <link rel="icon" href="/logome.png" />
   </Head>
 

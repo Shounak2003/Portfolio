@@ -1,7 +1,7 @@
 //links
 import Link from "next/link";
 //icons
-import {RiTwitterLine, RiInstagramLine,RiLinkedinLine,RiGithubLine,RiYoutubeLine,RiInboxLine} from 'react-icons/ri'
+import {RiTwitterLine, RiInstagramLine,RiLinkedinLine,RiGithubLine,RiYoutubeLine,RiInboxLine,RiDiscordLine } from 'react-icons/ri'
 
 // ... (existing imports)
 
@@ -22,6 +22,9 @@ const Socials = () => {
       </Link>
       <Link href={'https://github.com/Shounak2003'} className="hover:text-accent transition-all duration-300">
         <RiGithubLine size={iconSize} />
+      </Link>
+      <Link href={'https://discord.com/invite/XUpRTDpm'} className="hover:text-accent transition-all duration-300">
+        <RiDiscordLine size={iconSize} />
       </Link>
       <Link href={'https://www.youtube.com/@shounakchandra7263'} className="hover:text-accent transition-all duration-300">
         <RiYoutubeLine size={iconSize} />

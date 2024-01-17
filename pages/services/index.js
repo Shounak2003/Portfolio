@@ -14,7 +14,7 @@ import {fadeIn} from '../../variants';
 const Services = () => {
   return (<div className="h-full bg-primary/30 py-36 flex items-center">
     <Head>
-    <title>Shounak</title>
+    <title>My Skills</title>
     <link rel="icon" href="/logome.png" />
   </Head>
     <Circles />
