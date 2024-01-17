@@ -1,35 +1,49 @@
-//components
+// components
 import Circles from '/components/Circles'; 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-//icons
-import {BsArrowRight} from 'react-icons/bs';
+// icons
+import { BsArrowRight } from 'react-icons/bs';
 
-//framer
-import {motion} from 'framer-motion';
-//variants
-import {fadeIn} from '../../variants';
-import Head from 'next/head'; // Import Head from next/head
+// framer
+import { motion } from 'framer-motion';
+
+// variants
+import { fadeIn } from '../../variants';
+
+// next
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const Contact = () => {
-  useEffect(() => {
-    // Load the Typeform embed script
-    const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
-    script.async = true;
-    document.head.appendChild(script);
+  const router = useRouter();
+  const [isContactPage, setIsContactPage] = useState(false);
 
-    // Cleanup the script when the component is unmounted
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+  useEffect(() => {
+    // Check if the current page is the contact page
+    setIsContactPage(router.pathname === '/contact');
+  }, [router.pathname]);
+
+  useEffect(() => {
+    // Load the Typeform embed script only if on the contact page
+    if (isContactPage) {
+      const script = document.createElement('script');
+      script.src = '//embed.typeform.com/next/embed.js';
+      script.async = true;
+      document.head.appendChild(script);
+
+      return () => {
+        document.head.removeChild(script);
+      };
+    }
+  }, [isContactPage]);
+
   return (
     <div className='h-full bg-primary/30 '>
       <Head>
-    <title>COntact me</title>
-    <link rel="icon" href="/logome.png" />
-  </Head>
+        <title>Contact me</title>
+        <link rel="icon" href="/logome.png" />
+      </Head>
       <div className='container-mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         {/**text & form  */}
         <div className='flex flex-col w-full max-w-[700px]'>
@@ -53,16 +67,16 @@ const Contact = () => {
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/>
             </button>
           </motion.form>
-            {/* Typeform button */}
+          {/**Typeform button */}
+          {isContactPage && (
             <div data-tf-live="01HM9Z9YQ9VZFQSEGKDG7JBQ49"></div>
-          {/*Copyright*/}
+          )}
+          {/* Copyright */}
           <div className="text-center pt-4">
-        <p className="text-sm font-bold">&copy; 2024 Shounak Chandra. All Rights Reserved.</p>
-      </div>
+            <p className="text-sm font-bold">&copy; 2024 Shounak Chandra. All Rights Reserved.</p>
+          </div>
         </div>
       </div>
-
-      
     </div>
   );
 };
