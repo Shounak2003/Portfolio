@@ -1,5 +1,8 @@
 # My Portfolio
 
+![Portfolio](https://github.com/Shounak2003/Portfolio/assets/93007487/67b73388-8c0f-4ac7-bd44-2349c4390b4e)
+
+
 Welcome to my portfolio! This project is built using Next.js, Tailwind CSS, and Framer Motion to showcase my skills, projects, and experiences in a modern and interactive way.
 
 ## Technologies Used
@@ -74,5 +77,5 @@ Thank you for visiting my portfolio! Explore, enjoy, and get in touch.
 
 
 
-![Portfolio](https://github.com/Shounak2003/Portfolio/assets/93007487/6283c382-238a-44be-bdc2-6b64d85ffa04)
+
 
