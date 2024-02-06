@@ -27,7 +27,7 @@ To explore or use this portfolio, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/portfolio.git
+    git clone https://github.com/Shounak2003/Portfolio.git
     ```
 
 2. Install project dependencies:
@@ -68,10 +68,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For inquiries or collaboration opportunities, feel free to reach out:
 
-- Email: your-email@example.com
+- Email: way2shounak@gmail.com
 
 Thank you for visiting my portfolio! Explore, enjoy, and get in touch.
 
 
 
-![image](https://github.com/Shounak2003/My-Portfolio/assets/93007487/a853efef-a928-4bf5-8332-785da8667066)
+!<img src="https://github.com/Shounak2003/Portfolio/public/Portfolio.png">
