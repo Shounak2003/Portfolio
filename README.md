@@ -74,4 +74,5 @@ Thank you for visiting my portfolio! Explore, enjoy, and get in touch.
 
 
 
-!<img src="https://github.com/Shounak2003/Portfolio/public/Portfolio.png">
+![Portfolio](https://github.com/Shounak2003/Portfolio/assets/93007487/6283c382-238a-44be-bdc2-6b64d85ffa04)
+
