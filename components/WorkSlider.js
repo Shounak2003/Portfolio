@@ -26,7 +26,7 @@ const workSlides = {
         {
           title: 'Crypto Hub X Clone',
           path: '/CryptoHub.jpeg',
-          githubLink: 'https://github.com/Shounak2003/CryptoHubX',
+          githubLink: 'https://crypto-hub-gamma.vercel.app/',
         },
         {
           title: 'My Portfolio',
