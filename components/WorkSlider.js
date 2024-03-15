@@ -20,7 +20,7 @@ const workSlides = {
         {
           title: 'Disney plus CLone',
           path: '/Disney.jpg',
-          githubLink: 'https://my-disney-plus.netlify.app/login',
+          githubLink: 'https://my-disney-plus.netlify.app',
 
         },
         {
