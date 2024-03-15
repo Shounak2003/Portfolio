@@ -20,7 +20,8 @@ const workSlides = {
         {
           title: 'Disney plus CLone',
           path: '/Disney.jpg',
-          githubLink: 'https://github.com/Shounak2003/disney-plus-clone',
+          githubLink: 'https://my-disney-plus.netlify.app/login',
+
         },
         {
           title: 'Crypto Hub X Clone',
