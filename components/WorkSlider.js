@@ -15,7 +15,7 @@ const workSlides = {
         {
           title: 'BLockchain Crowd Funding',
           path: '/Blockchaincrowd.png',
-          githubLink: 'https://github.com/Shounak2003/blockchain-crowd-funding',
+          githubLink: 'https://crowd-funding-web3.web.app/',
         },
         {
           title: 'Disney plus CLone',
